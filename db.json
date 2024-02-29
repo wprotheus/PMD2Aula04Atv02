@@ -1,0 +1,63 @@
+{
+   "1º PERÍODO":{
+      "Disciplinas":[
+         "Fundamentos de Redes de Computadores",
+         "Informática Instrumental",
+         "Inglês Técnico",
+         "Introdução À Computação",
+         "Introdução À Lógica",
+         "Tendências Tecnológicas Para O Mercado de Ti"
+      ]
+   },
+   "2º PERÍODO":{
+      "Disciplinas":[
+         "Análise de Sistemas",
+         "Fundamentos e Projeto de Banco de Dados",
+         "Introdução À Programação",
+         "Programação Básica Para Web",
+         "Programação Orientada À Objetos"
+      ]
+   },
+   "3º PERÍODO":{
+      "Disciplinas":[
+         "Administração de Sistemas Proprietários",
+         "Gerenciamento de Dados Para Web",
+         "Introdução À Conectividade",
+         "Programação Para Banco de Dados",
+         "Programação Para Web Designers",
+         "Programação Para Web I"
+      ]
+   },
+   "4º PERÍODO":{
+      "Disciplinas":[
+         "Programação Para Web II",
+         "Projeto de Interface Web",
+         "Projeto de Sistemas",
+         "Sistemas Distribuídos e Soa",
+         "Testes de Software"
+      ]
+   },
+   "5º PERÍODO":{
+      "Disciplinas":[
+         "Administração de Banco de Dados",
+         "Infraestrutura Para Sistemas Web",
+         "Metodologias de Desenvolvimento",
+         "Novas Tecnologias em Banco de Dados",
+         "Programação Para Dispositivos Móveis I",
+         "Segurança de Sistemas"
+      ]
+   },
+   "6º PERÍODO":{
+      "Disciplinas":[
+         "Gerência de Configuração",
+         "Novas Tecnologias em Desenvolvimento Para Web",
+         "Padrões de Projeto",
+         "Programação Para Dispositivos Móveis II"
+      ]
+   },
+   "OPTATIVAS":{
+      "Disciplinas":[
+         "Direito Aplicado À Informática"
+      ]
+   }
+}

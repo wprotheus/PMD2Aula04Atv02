@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">pmd2A04Atv02</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">PMD2 - Aula 04 - Atividade 02</string>
+    <string name="nav_header_subtitle">wellington.neto@estudante.ifto.edu.br</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="menu_p1">1º Período</string>
+    <string name="menu_p2">2º Período</string>
+    <string name="menu_p3">3º Período</string>
+    <string name="menu_p4">4º Período</string>
+    <string name="menu_p5">5º Período</string>
+    <string name="menu_p6">6º Período</string>
+    <string name="menu_optativa">Optativa</string>
+    <string name="menu_home">Seja bem-vindo!</string>
+</resources>

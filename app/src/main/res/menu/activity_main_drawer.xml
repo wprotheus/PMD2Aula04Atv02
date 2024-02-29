@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homeif"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_p1"
+            android:icon="@drawable/pone"
+            android:title="@string/menu_p1" />
+        <item
+            android:id="@+id/nav_p2"
+            android:icon="@drawable/ptwo"
+            android:title="@string/menu_p2" />
+        <item
+            android:id="@+id/nav_p3"
+            android:icon="@drawable/pthree"
+            android:title="@string/menu_p3" />
+        <item
+            android:id="@+id/nav_p4"
+            android:icon="@drawable/pfour"
+            android:title="@string/menu_p4" />
+        <item
+            android:id="@+id/nav_p5"
+            android:icon="@drawable/pfive"
+            android:title="@string/menu_p5" />
+        <item
+            android:id="@+id/nav_p6"
+            android:icon="@drawable/psix"
+            android:title="@string/menu_p6" />
+        <item
+            android:id="@+id/nav_optativa"
+            android:icon="@drawable/optativa"
+            android:title="@string/menu_optativa" />
+    </group>
+</menu>

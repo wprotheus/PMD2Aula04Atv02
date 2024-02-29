@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.wprotheus.pmd2a04atv02.ui.home.HomeFragment"
+        android:label="Bem-vindo"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_p1"
+        android:name="com.wprotheus.pmd2a04atv02.ui.p1.P1Fragment"
+        android:label="1º Período"
+        tools:layout="@layout/fragment_p1" />
+
+
+    <fragment
+        android:id="@+id/nav_p2"
+        android:name="com.wprotheus.pmd2a04atv02.ui.p2.P2Fragment"
+        android:label="2º Período"
+        tools:layout="@layout/fragment_p2" />
+
+    <fragment
+        android:id="@+id/nav_p3"
+        android:name="com.wprotheus.pmd2a04atv02.ui.p3.P3Fragment"
+        android:label="3º Período"
+        tools:layout="@layout/fragment_p3" />
+
+    <fragment
+        android:id="@+id/nav_p4"
+        android:name="com.wprotheus.pmd2a04atv02.ui.p4.P4Fragment"
+        android:label="4º Período"
+        tools:layout="@layout/fragment_p4" />
+
+    <fragment
+        android:id="@+id/nav_p5"
+        android:name="com.wprotheus.pmd2a04atv02.ui.p5.P5Fragment"
+        android:label="5º Período"
+        tools:layout="@layout/fragment_p5" />
+
+    <fragment
+        android:id="@+id/nav_p6"
+        android:name="com.wprotheus.pmd2a04atv02.ui.p6.P6Fragment"
+        android:label="6º Período"
+        tools:layout="@layout/fragment_p6" />
+
+    <fragment
+        android:id="@+id/nav_optativa"
+        android:name="com.wprotheus.pmd2a04atv02.ui.optativa.OptativaFragment"
+        android:label="Optativa"
+        tools:layout="@layout/fragment_optativa" />
+</navigation>
