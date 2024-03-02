@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,9 +12,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.wprotheus.pmd2a04atv02.databinding.FragmentP4Binding;
+import com.wprotheus.pmd2a04atv02.util.AdapterList;
 
 public class P4Fragment extends Fragment {
-
     private FragmentP4Binding p4Binding;
 
     @Nullable
@@ -25,9 +26,17 @@ public class P4Fragment extends Fragment {
         p4Binding = FragmentP4Binding.inflate(inflater, container, false);
         View view = p4Binding.getRoot();
 
-//        final TextView textView = binding.textHome;
-//        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-
+        final ListView listView = p4Binding.lvPfour;
+        p4ViewModel.getMutableLiveData().observe(getViewLifecycleOwner(), disciplinas -> {
+            AdapterList adapterList = new AdapterList(getContext(), disciplinas);
+            listView.setAdapter(adapterList);
+        });
         return view;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        p4Binding = null;
     }
 }

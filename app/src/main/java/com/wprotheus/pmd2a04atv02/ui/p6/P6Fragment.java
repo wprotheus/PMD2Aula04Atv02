@@ -1,23 +1,20 @@
 package com.wprotheus.pmd2a04atv02.ui.p6;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.wprotheus.pmd2a04atv02.databinding.FragmentP5Binding;
 import com.wprotheus.pmd2a04atv02.databinding.FragmentP6Binding;
-import com.wprotheus.pmd2a04atv02.ui.p5.P5ViewModel;
+import com.wprotheus.pmd2a04atv02.util.AdapterList;
 
 public class P6Fragment extends Fragment {
-
     private FragmentP6Binding p6Binding;
 
     @Nullable
@@ -25,14 +22,21 @@ public class P6Fragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        P6ViewModel p5ViewModel = new ViewModelProvider(this).get(P6ViewModel.class);
+        P6ViewModel p6ViewModel = new ViewModelProvider(this).get(P6ViewModel.class);
         p6Binding = FragmentP6Binding.inflate(inflater, container, false);
         View view = p6Binding.getRoot();
 
-//        final TextView textView = binding.textHome;
-//        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-
+        final ListView listView = p6Binding.lvPsix;
+        p6ViewModel.getMutableLiveData().observe(getViewLifecycleOwner(), disciplinas -> {
+            AdapterList adapterList = new AdapterList(getContext(), disciplinas);
+            listView.setAdapter(adapterList);
+        });
         return view;
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        p6Binding = null;
+    }
 }

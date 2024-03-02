@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,9 +12,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.wprotheus.pmd2a04atv02.databinding.FragmentP5Binding;
+import com.wprotheus.pmd2a04atv02.util.AdapterList;
 
 public class P5Fragment extends Fragment {
-
     private FragmentP5Binding p5Binding;
 
     @Nullable
@@ -25,9 +26,17 @@ public class P5Fragment extends Fragment {
         p5Binding = FragmentP5Binding.inflate(inflater, container, false);
         View view = p5Binding.getRoot();
 
-//        final TextView textView = binding.textHome;
-//        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-
+        final ListView listView = p5Binding.lvPfive;
+        p5ViewModel.getMutableLiveData().observe(getViewLifecycleOwner(), disciplinas -> {
+            AdapterList adapterList = new AdapterList(getContext(), disciplinas);
+            listView.setAdapter(adapterList);
+        });
         return view;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        p5Binding = null;
     }
 }

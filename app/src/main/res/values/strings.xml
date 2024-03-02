@@ -5,7 +5,10 @@
     <string name="nav_header_title">PMD2 - Aula 04 - Atividade 02</string>
     <string name="nav_header_subtitle">wellington.neto@estudante.ifto.edu.br</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Configurações</string>
+    <string name="menu_contato">Contato</string>
+    <string name="menu_sobre">Sobre</string>
+    <string name="contato">Avenida Joaquim Teotônio Segurado, Quadra 202 sul, ACSU–SE 20, Conjunto 1, Lote 8, Plano Diretor Sul – Palmas–TO – CEP: 77.020-450 - Telefone: (63) 3229-2200 - E-mail: reitoria@ifto.edu.br</string>
+    <string name="sobre">O IFTO é uma instituição de educação superior, básica e profissional, pluricurricular e multicampi (reitoria, campus, campus avançado e polos de educação a distância), especializada na oferta de educação profissional e tecnológica nas diferentes modalidades de ensino, com base na conjugação de conhecimentos técnicos e tecnológicos com as suas práticas pedagógicas/andragógicas.</string>
 
     <string name="menu_p1">1º Período</string>
     <string name="menu_p2">2º Período</string>
@@ -14,5 +17,5 @@
     <string name="menu_p5">5º Período</string>
     <string name="menu_p6">6º Período</string>
     <string name="menu_optativa">Optativa</string>
-    <string name="menu_home">Seja bem-vindo!</string>
+    <string name="menu_home">Seja bem-vindo</string>
 </resources>
